@@ -1,0 +1,275 @@
+
+/* ===== DASAR ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #fffaf5;
+    color: #59454b;
+    line-height: 1.6;
+}
+
+/* ===== HEADER ===== */
+header {
+    background: #f5e3df;
+    color: #6f4b52;
+    padding: 35px 7%;
+    border-bottom: 1px solid #ead2ce;
+}
+
+header h1 {
+    font-size: clamp(24px, 4vw, 34px);
+    margin-bottom: 8px;
+    color: #80545e;
+}
+
+header p {
+    color: #896b70;
+    margin-bottom: 20px;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #80545e;
+    background: #fffaf5;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+nav a:hover {
+    background: #dfb9bb;
+    color: #fff;
+}
+
+/* ===== KONTEN ===== */
+main {
+    width: 90%;
+    max-width: 1150px;
+    margin: 35px auto;
+}
+
+section {
+    background: #fffdf9;
+    padding: 28px;
+    margin-bottom: 28px;
+    border: 1px solid #eee0dc;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(100, 70, 70, 0.04);
+}
+
+section h2 {
+    color: #80545e;
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+section > p {
+    color: #907c7c;
+    margin-bottom: 22px;
+}
+
+/* ===== FORM ===== */
+fieldset {
+    border: 1px solid #ead8d3;
+    border-radius: 10px;
+    padding: 24px;
+    background: #fffaf6;
+}
+
+legend {
+    color: #80545e;
+    font-weight: 600;
+    padding: 0 10px;
+}
+
+form p {
+    margin-bottom: 18px;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 7px;
+    color: #694f53;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #e5d3cf;
+    border-radius: 7px;
+    background: #fffdfb;
+    color: #59454b;
+    font-family: inherit;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #c99da3;
+    box-shadow: 0 0 0 3px rgba(201, 157, 163, 0.15);
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* ===== TOMBOL ===== */
+button {
+    background: #c99da3;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    padding: 12px 24px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #ad7e86;
+}
+
+/* ===== PESAN ===== */
+.pesan {
+    padding: 13px 16px;
+    margin-bottom: 20px;
+    border-radius: 7px;
+    background: #edf3e9;
+    color: #4c704b;
+    border: 1px solid #d5e3ce;
+}
+
+.pesan-error {
+    background: #f9e9e7;
+    color: #a34e4e;
+    border-color: #ebceca;
+}
+
+/* ===== TABEL ===== */
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    border: 1px solid #ead8d3;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    min-width: 750px;
+    border-collapse: collapse;
+    background: #fffdf9;
+}
+
+thead {
+    background: #f1dfdb;
+}
+
+th {
+    color: #80545e;
+    font-size: 13px;
+    text-align: left;
+    font-weight: 600;
+}
+
+th,
+td {
+    padding: 14px 13px;
+    border-bottom: 1px solid #f0e5e0;
+}
+
+td {
+    font-size: 13px;
+    color: #694f53;
+}
+
+tbody tr:nth-child(even) {
+    background: #fdf7f2;
+}
+
+tbody tr:hover {
+    background: #f7ece7;
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+td small {
+    display: inline-block;
+    margin-top: 4px;
+    color: #9a7b80;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background: #ead2ce;
+    color: #76565b;
+    text-align: center;
+    padding: 22px;
+    font-size: 13px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 600px) {
+    header {
+        padding: 28px 5%;
+    }
+
+    main {
+        width: 94%;
+        margin: 22px auto;
+    }
+
+    section {
+        padding: 18px;
+    }
+
+    section h2 {
+        font-size: 21px;
+    }
+
+    fieldset {
+        padding: 16px;
+    }
+
+    nav {
+        gap: 8px;
+    }
+
+    nav a {
+        padding: 9px 13px;
+        font-size: 13px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+body {
+    background: pink !important;
+}
